@@ -23,7 +23,7 @@ const App = () => {
   const renderKeys = () => {
    
     return keys.map((keyValue) => (
-      <button key={`key-${keyValue}`} id={key === " " ? `key-space` : `key-${key}`} onClick={() => handleClick(keyValue)}>
+      <button key={`key-${keyValue}`} id={`key-${keyValue === ' ' ? 'space' : keyValue}`} onClick={() => handleClick(keyValue)}>
         {keyValue}
       </button>
     ));
